@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <score-generator
+    :score=8
+    :size=50
+    :lineWeight=5
+    :lineColor="'blue'"
+    :direction="'row'"
+  />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ScoreGenerator from "./components/ScoreGenerator"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ScoreGenerator
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
